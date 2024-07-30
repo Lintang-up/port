@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portfolio Details - MyResume Bootstrap Template</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+  </head>
+
+  <body class="portfolio-details-page">
+    <header id="" class="header d-flex flex-column justify-content-center">
+      <i class="header-toggle d-xl-none bi bi-list"></i>
+      <nav id="navmenu" class="navmenu"></nav>
+    </header>
+
+    <main class="main">
+      <!-- Page Title -->
+      <div class="page-title" data-aos="fade">
+        <div class="container">
+          <h1>Portfolio Details</h1>
+        </div>
+      </div>
+      <!-- End Page Title -->
+
+      <!-- Portfolio Details Section -->
+      <section id="portfolio-details" class="portfolio-details section">
+        <div class="container" data-aos="fade-up">
+          <div class="portfolio-details-slider swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "navigation": {
+                  "nextEl": ".swiper-button-next",
+                  "prevEl": ".swiper-button-prev"
+                },
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                }
+              }
+            </script>
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img src="assets\img\port1\1.png" alt="" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets\img\port1\2.png" alt="" />
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets\img\port1\3.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <div class="row justify-content-between gy-4 mt-4">
+            <div class="col-lg-8" data-aos="fade-up">
+              <div class="portfolio-description">
+                <h2>Deskripsi Alat Deteksi Detak Jantung, dan Suhu Tubuh</h2>
+                <p>
+                  Alat ini berfungsi untuk mengukur dan menampilkan data detak jantung,dan data suhu tubuh. Data yang dihasilkan dari sensor MAX30100 diproses oleh Esp8266, hasilnya akan ditampilkan pada layar OLED 128x64, dan dapat
+                  dipantau melalui website secara realtime.
+                </p>
+
+                <hr />
+                <h4>Komponen yang Digunakan:</h4>
+                <h6>ESP8266</h6>
+                <p>• Mikrocontroller berbasis ESP8266 yang mendukung konektivitas Wi-Fi. <br />• Memiliki banyak pin I/O untuk koneksi dengan sensor dan layar.</p>
+                <h6>Sensor MAX30100</h6>
+                <p>• Sensor optik yang digunakan untuk mendeteksi detak jantung. <br />• Menggunakan metode fotopletismografi (PPG) untuk pengukuran.</p>
+                <h6>OLED Shield 128x64</h6>
+                <p>• Layar OLED dengan resolusi 128x64 piksel. <br />• Digunakan untuk menampilkan hasil pengukuran secara real-time.</p>
+                <h6>DHT11</h6>
+                <p>• Sensor suhu yang digunakan untuk mendeteksi suhu tubuh. <br />• Alternatif dari sensor GY-906 yang lebih murah.</p>
+
+                <hr />
+                <h4>Cara Kerja</h4>
+                <h6>Pemasangan Sensor:</h6>
+                <p>
+                  • Sensor MAX30100 ditempatkan pada ujung jari pengguna untuk melakukan pengukuran. <br />
+                  • Sensor ini akan memancarkan cahaya inframerah dan merah melalui jaringan tubuh dan mendeteksi cahaya yang dipantulkan. <br />
+                  • Sensor DHT11 ditempatkan pada ujung jari pengguna untuk mendeteksi suhu tubuh.
+                </p>
+                <h6>Proses Pengukuran:</h6>
+                <p>
+                  • Esp8266 membaca data mentah dari sensor MAX30100 dan sensor DHT11. <br />
+                  • Data yang diperoleh Max30100 meliputi variasi intensitas cahaya yang dapat digunakan untuk menghitung detak jantung. <br />
+                  • Data yang diperoled DHT11 meliputi suhu yang akan ditampilkan untuk suhu tubuh.
+                </p>
+                <h6>Pengolahan Data:</h6>
+                <p>
+                  • Algoritma di dalam esp8266 mengolah data mentah menjadi nilai detak jantung (bpm), dan DHT11. <br />
+                  • Data yang sudah diproses kemudian dikonversi ke format yang mudah dibaca dan ditampilkan di oled dan diwebsite secara realatime.
+                </p>
+                <h6>Menampilkan hasil</h6>
+                <p>
+                  • Hasil pengukuran ditampilkan pada OLED shield 128x64 dalam format yang jelas dan mudah dibaca. <br />
+                  • Hasil juga diupload di website sehingga kita dapat memantau Riwayat detaknya <br />
+                  • Informasi yang ditampilkan meliputi detak jantung dalam bpm, dan suhu tubuh.
+                </p>
+
+                <hr />
+                <h4>keunggulan:</h4>
+                <h6>Real-time Monitoring:</h6>
+                <p>• Alat ini mampu memberikan hasil pengukuran secara real-time, memungkinkan pengguna untuk segera mengetahui kondisi kesehatannya.</p>
+                <h6>Portable</h6>
+                <p>
+                  • Ukurannya yang kecil dan penggunaan komponen yang hemat energi membuat alat ini mudah dibawa dan digunakan di berbagai tempat <br />
+                  • Alat ini dapat ditampilkan melalui labtop dan smartphone
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong> IoT Web</li>
+                  <li><strong>Project</strong> UAS IoT</li>
+                  <li><strong>Project date</strong> 23 June, 2024</li>
+                  <li><strong>Github</strong> <a href="https://github.com/Lintang-up/MonitoringSuhuDanDetakJantung.git">SourceCode</a></li>
+                  <li><a href="https://youtu.be/S_7pbsOq2Dk" class="btn-visit align-self-start">Visit Documentation</a></li>
+                  <li><a href="https://apasaja-iot.000webhostapp.com/" class="btn-visit align-self-start">Visit Website</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Details Section -->
+    </main>
+
+    <footer id="footer" class="footer position-relative light-background">
+      <div class="container">
+        <h3 class="sitename">Muhammad Lintang Pamungkas</h3>
+        <div class="social-links d-flex justify-content-center">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href="https://instagram.com/lintang.lp"><i class="bi bi-instagram"></i></a>
+          <a href="https://github.com/lintang-up"><i class="bi bi-github"></i></a>
+          <a href="https://linkedin.com/in/lintang-lp/"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
